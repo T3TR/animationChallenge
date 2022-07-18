@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+
+.li_logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+@keyframes animateLogo {
+    0%   {background-color: red;
+          border-radius: 0%;}
+    20%  {background-color: orange;
+          transform: rotate(72deg);
+          border-radius: 20%;}
+    40%  {background-color: yellow;
+          transform: rotate(144deg);
+          border-radius: 40%;}
+    60%  {background-color: green;
+          transform: rotate(216deg);
+          border-radius: 60%;}
+    80%  {background-color: blue;
+          transform: rotate(288deg);
+          border-radius: 80%;}
+    100% {background-color: purple;
+          transform: rotate(360deg);
+          border-radius: 100%;}
+}
+
+div {
+    margin: 10%;
+    width: 200px;
+    height: 200px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+div:hover {
+    background-color: red;
+    animation-name: animateLogo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    box-sizing: border-box;
+}
