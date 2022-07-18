@@ -1,14 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: black;
 }
-
-.li_logo {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    box-sizing: border-box;
-}
-
 @keyframes animateLogo {
     0%   {background-color: red;
           border-radius: 0%;}
@@ -28,17 +23,19 @@ body{
           transform: rotate(360deg);
           border-radius: 100%;}
 }
-
+.li_logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-top: 25px;
+}
 div {
     margin: 10%;
     width: 200px;
     height: 200px;
-    padding-top: 25px;
     display: flex;
     justify-content: center;
-    box-sizing: border-box;
 }
-
 div:hover {
     background-color: red;
     animation-name: animateLogo;
@@ -46,5 +43,4 @@ div:hover {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
-    box-sizing: border-box;
 }
